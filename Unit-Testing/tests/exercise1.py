@@ -3,10 +3,10 @@ from fucntion1 import addFunction, Square
 """ Note the setUpModule() runs at the beginnig of the Test its is a module Function and tearDownModule() runs at the end of the  Test
 """
 def setUpModule():
-    print("starting module")
+    print("\n", '#' * 10,"starting module setup", "\n", '#' * 10)
 
 def tearDownModule():
-    print("Runing TearDown")
+    print("\n", '#' * 10,"Runing module TearDown", "\n", '#' * 10)
 
 class TestAddFunction(unittest.TestCase):
     """
@@ -36,7 +36,7 @@ class TestAddFunction(unittest.TestCase):
         self.assertEqual(addFunction(2, 2), 4)
 
     def test_not_equal(self):
-        self.assertNotEqual(addFunction(2,2), 5)
+        self.assertNotEqual(addFunction(0.2,0.2), 4)
         
     def test_negative_num(self):
         self.assertEqual(addFunction(-1, -1), -2)
