@@ -2,9 +2,7 @@ row_1 = ["🎅","✅","🔥"]
 row_2 = ["🎅","✅","🔥"]
 row_3 = ["🎅","✅","🔥"]
 
-combined_row = [row_1,
-                 row_2,
-                  row_3]
+combined_row = [row_1,row_2,row_3]
 
 put = input("Where do you want to put in rows and col :")
 
